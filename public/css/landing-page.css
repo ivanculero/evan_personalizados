@@ -168,3 +168,76 @@ footer {
 p.copyright {
     margin: 15px 0 0;
 }
+
+.intro-container {
+    position: relative; /* Para que el carrusel se posicione relativamente a este contenedor */
+    overflow: hidden; /* Para ocultar las imágenes que están fuera del contenedor */
+    height: 100vh; /* Ajusta la altura según necesites */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centra el contenido de .intro-message */
+}
+
+.background-carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Para que esté detrás del contenido */
+}
+
+.background-carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para que la imagen cubra todo el fondo sin deformarse */
+    opacity: 0; /* Inicialmente todas las imágenes están ocultas */
+    transition: opacity 1s ease-in-out; /* Transición suave para el cambio de opacidad */
+}
+
+.background-carousel img.active {
+    opacity: 1; /* La imagen activa se muestra */
+}
+
+.row {
+    position: relative; /* Para que el contenido esté encima del carrusel */
+    z-index: 1;
+    /* Otros estilos que ya tengas para tu .row */
+}
+
+.intro-message {
+    /* Otros estilos que ya tengas para tu .intro-message */
+    color: white; /* Asegúrate de que el texto sea legible sobre las imágenes */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Opcional: sombra para mejorar la legibilidad */
+}
+
+.intro-message {
+    position: relative; /* Necesario para posicionar el botón de forma absoluta dentro */
+    /* Otros estilos que ya tengas */
+}
+
+.intro-message .call-to-action-button {
+    position: absolute;
+    bottom: 20px; /* Distancia desde la parte inferior */
+    right: 20px; /* Distancia desde la derecha */
+}
+
+.call-to-action-button {
+    background-color: #007bff; /* Un color azul llamativo (puedes cambiarlo) */
+    color: white; /* Texto blanco */
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.call-to-action-button:hover {
+    background-color: #0056b3; /* Un tono más oscuro al pasar el mouse */
+}
