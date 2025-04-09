@@ -1,8 +1,3 @@
-/*
- * Start Bootstrap - Landing Page (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
 
 body,
 html {
@@ -227,7 +222,7 @@ p.copyright {
 }
 
 .call-to-action-button {
-    background-color: #007bff; /* Un color azul llamativo (puedes cambiarlo) */
+    background-color: #6ac1fc; /* Un color azul llamativo (puedes cambiarlo) */
     color: white; /* Texto blanco */
     border: none;
     padding: 15px 30px;
@@ -282,3 +277,110 @@ p.copyright {
     height: 300px; /* Prueba con una altura fija */
     perspective: 1000px;
 }
+
+.banner-social-buttons .btn-default {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 0;
+    display: flex; /* Usamos flexbox para centrar */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+.banner-social-buttons .btn-default i {
+    font-size: 1.5em;
+    margin: 0; /* Asegúrate de que no haya márgenes en el icono */
+}
+
+.banner-social-buttons .btn-whatsapp {
+    background-color: #25D366; /* Verde de WhatsApp */
+    color: white;
+}
+
+.banner-social-buttons .btn-whatsapp:hover {
+    background-color: #128C7E; /* Verde más oscuro al pasar el mouse */
+}
+
+.banner-social-buttons .btn-facebook {
+    background-color: #4267B2; /* Azul de Facebook */
+    color: white;
+}
+
+.banner-social-buttons .btn-facebook:hover {
+    background-color: #364E8B; /* Azul más oscuro al pasar el mouse */
+}
+
+.banner-social-buttons .btn-instagram {
+    background: #f09433; /* Naranja */
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    color: white;
+}
+
+.banner-social-buttons .btn-instagram:hover {
+    opacity: 0.9;
+}
+
+.content-section-a .row:first-child { /* Selecciona el primer .row dentro de .content-section-a */
+    display: flex;
+    align-items: stretch;
+}
+
+.content-section-a .row:first-child .col-lg-5:first-child { /* Columna del texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-section-a .row:first-child .col-lg-5:last-child .image-flip-container { /* Contenedor de las imágenes */
+    height: 100%; /* Para que ocupe la altura de la columna */
+}
+
+.content-section-a .row:first-child .col-lg-5:last-child .image-flip-container img { /* Imágenes dentro del flip container */
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%; /* Asegura que las imágenes ocupen el ancho del contenedor */
+    height: 100%; /* Asegura que las imágenes ocupen la altura del contenedor */
+}
+
+.content-section-b .row {
+    display: flex; /* Convertimos la fila en un contenedor Flexbox */
+    align-items: stretch; /* Hacemos que los elementos hijos se estiren verticalmente */
+}
+
+.content-section-b .row .col-lg-5:first-child { /* Seleccionamos el primer col-lg-5 (el del texto) */
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido interno se alinee verticalmente */
+    justify-content: center; /* Centra el texto verticalmente dentro de la columna (opcional) */
+}
+
+.content-section-b .row .col-lg-5:last-child img { /* Seleccionamos la imagen */
+    border-radius: 10px; /* Ajusta el valor para el radio de los bordes */
+    height: 100%; /* La altura será igual a la de la columna de texto */
+    object-fit: cover; /* Para que la imagen cubra el contenedor sin deformarse */
+}
+
+.content-section-c .row {
+    display: flex;
+    align-items: stretch;
+}
+
+.content-section-c .row .col-lg-5:first-child { /* Columna del texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-section-c .row .col-lg-5:last-child img { /* Imagen */
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*.btn-cuentanos {
+    margin-bottom: 30px; /* Ajusta este valor para aumentar o disminuir el espacio *
+}
+*/
